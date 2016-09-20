@@ -1,6 +1,6 @@
 name: emacs-tealeg
-version: 24.5
-summary: GNU Emacs 24.5
+version: 25.1
+summary: GNU Emacs 25.1
 description: An extensible, customizable, free/libre text editor -- and more.
 confinement: strict
 
@@ -39,7 +39,7 @@ parts:
       emacsclient-tealeg.sh: bin/emacsclient-tealeg
   emacs:
     plugin: autotools
-    source: http://ftp.gnu.org/gnu/emacs/emacs-24.5.tar.xz
+    source: http://ftp.gnu.org/gnu/emacs/emacs-25.1.tar.xz
     source-type: tar
     install-via: prefix
     build-packages:
