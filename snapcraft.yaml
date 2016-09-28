@@ -1,12 +1,12 @@
-name: emacs-tealeg
+name: emacs-fusion
 version: 25.1
 summary: GNU Emacs 25.1
 description: An extensible, customizable, free/libre text editor -- and more.
 confinement: strict
 
 apps:
-  emacs-tealeg:
-    command: emacs-tealeg
+  emacs-fusion:
+    command: emacs-fusion
     plugs:
       - home
       - x11
@@ -14,8 +14,8 @@ apps:
       - gsettings
       - network
       - network-bind
-  emacsclient-tealeg:
-    command: emacsclient-tealeg
+  emacsclient-fusion:
+    command: emacsclient-fusion
     plugs:
       - home
       - x11
@@ -32,11 +32,11 @@ apps:
     command: grep-changelog
 
 parts:
-  emacs-tealeg:
+  emacs-fusion:
     plugin: copy
     files:
-      emacs-tealeg.sh: bin/emacs-tealeg
-      emacsclient-tealeg.sh: bin/emacsclient-tealeg
+      emacs-fusion.sh: bin/emacs-fusion
+      emacsclient-fusion.sh: bin/emacsclient-fusion
   emacs:
     plugin: autotools
     source: http://ftp.gnu.org/gnu/emacs/emacs-25.1.tar.xz
